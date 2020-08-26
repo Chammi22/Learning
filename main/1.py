@@ -27,24 +27,18 @@ number = 1233312
 get_digit(number)
 
 
-def length(element):
-    return len(element)
-
-
 def get_longest_word(string):
     string = string.split()
-    string.sort(reverse=True, key=length)
+    string.sort(reverse=True, key=len)
     print(string[0])
 
 
 def get_max_word(string):
     string = string.split()
-    print(max(string, key=length))
+    print(max(string, key=len))
 
 
-#
-#
-get_longest_word("Python is simple and effective")
+get_max_word("Python is simple and effective")
 
 
 def get_pairs(List):
